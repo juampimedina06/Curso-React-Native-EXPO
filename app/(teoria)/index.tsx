@@ -17,17 +17,11 @@ export default function Screen1() {
     <ThemeProvider theme={currentTheme}>
       <ScrollView>
         <Container>
-          <Imagen source={require("../assets/images/react-logo.png")} />
+          <Imagen source={require("../../assets/images/react-logo.png")} />
         </Container>
         <TextInputEntrada placeholder="Ingresa tu nombre" />
         <Container>
-          <Imagen source={require("../assets/images/react-logo.png")} />
-        </Container>
-        <Container>
-          <Imagen source={require("../assets/images/react-logo.png")} />
-        </Container>
-        <Container>
-          <Imagen source={require("../assets/images/react-logo.png")} />
+          <Imagen source={require("../../assets/images/react-logo.png")} />
         </Container>
       </ScrollView>
     </ThemeProvider>

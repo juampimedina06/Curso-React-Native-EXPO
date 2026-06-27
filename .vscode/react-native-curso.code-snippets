@@ -1,0 +1,25 @@
+{
+  "para crear componentes en react native con styled component": {
+    "prefix": "rn",
+    "body": [
+      "import styled from \"styled-components/native\";",
+      "",
+      "export default function Index() {",
+      "  return (",
+      "    <Container>",
+      "      <Texto>componente</Texto>",
+      "    </Container>",
+      "  );",
+      "}",
+      "",
+      "const Container = styled.View`",
+      "  flex: 1;",
+      "  justify-content: center;",
+      "  align-items: center;",
+      "`;",
+      "const Texto = styled.Text``;",
+      "",
+    ],
+    "description": "para crear componentes en react native con styled component",
+  },
+}

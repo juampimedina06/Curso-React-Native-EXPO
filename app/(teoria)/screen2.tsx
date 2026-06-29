@@ -2,7 +2,7 @@ import { useLocalSearchParams, useRouter } from "expo-router";
 import { Button, View } from "react-native";
 import styled from "styled-components/native";
 
-export default function Screen2() {
+export function Screen2() {
   const router = useRouter();
   const data = useLocalSearchParams();
   return (

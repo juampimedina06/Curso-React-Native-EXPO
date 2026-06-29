@@ -4,8 +4,7 @@ export default function Layout() {
   return (
     <Stack screenOptions={{ headerShown: false }}>
       <Stack.Screen name="index" />
-      <Stack.Screen name="(1-conversor)" />
-      <Stack.Screen name="(teoria)" />
+      <Stack.Screen name="screen2" />
     </Stack>
   );
 }

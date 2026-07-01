@@ -13,6 +13,7 @@
     "expo-env.d.ts",
     "app/(1-conversor)/conversor.jsx",
     "app/index.jsx",
-    "app/(teoria)/index.jsx"
+    "app/(teoria)/index.jsx",
+    "app/_layout.jsx"
   ]
 }

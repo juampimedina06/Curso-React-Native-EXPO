@@ -3,6 +3,7 @@ import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
 import { Platform } from "react-native";
 import styled from "styled-components/native";
+import { FetchComponent } from "./fetch";
 import { FlatListComponent } from "./flatlist";
 import { Gradientes } from "./gradientes";
 import { SectionListComponent } from "./sectionlist";
@@ -21,8 +22,13 @@ export default function Index() {
     },
     {
       id: 3,
-      name: "Gradientes",
+      name: "Gradient",
       component: <Gradientes />,
+    },
+    {
+      id: 4,
+      name: "Fetch-axios",
+      component: <FetchComponent />,
     },
   ];
 
@@ -31,7 +37,7 @@ export default function Index() {
   return (
     <Container style={{ paddingTop: Platform.OS === "ios" ? 0 : 50 }}>
       <GradientBackground />
-      <StatusBar style="light" />
+      <StatusBar style="dark" />
       <Title>Seleccione una categoria</Title>
       <CategoriasSections>
         {dataCategorias.map((categoria) => (
@@ -76,7 +82,7 @@ const CategoriasSections = styled.View`
 const CategoryContainer = styled.TouchableOpacity`
   background-color: ${({ selected }) => (selected ? "#1a2a47" : "#2d2d2d")};
   border-radius: 10px;
-  padding: 10px;
+  padding: 8px 9px;
   border: 1px solid ${({ selected }) => (selected ? "#4a61c4" : "transparent")};
 `;
 

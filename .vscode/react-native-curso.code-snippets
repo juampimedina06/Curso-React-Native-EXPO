@@ -22,4 +22,9 @@
     ],
     "description": "para crear componentes en react native con styled component",
   },
+  "para crear regiones en REACT-NATIVE": {
+    "prefix": "regionrn",
+    "body": ["//#region", "", "", "//#endregion"],
+    "description": "para crear regiones en REACT-NATIVE",
+  },
 }

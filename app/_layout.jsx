@@ -1,8 +1,5 @@
 import { MaterialIcons } from "@expo/vector-icons";
-import {
-  QueryClient,
-  QueryClientProvider
-} from "@tanstack/react-query";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Drawer } from "expo-router/drawer";
 
 // Create a client
@@ -11,7 +8,15 @@ const queryClient = new QueryClient();
 export default function Layout() {
   return (
     <QueryClientProvider client={queryClient}>
-      <Drawer>
+      <Drawer
+        screenOptions={{
+          headerShown: false,
+          headerStyle: {
+            backgroundColor: "#000",
+          },
+          headerTintColor: "#fff",
+        }}
+      >
         <Drawer.Screen
           name="index"
           options={{
@@ -39,6 +44,16 @@ export default function Layout() {
             title: "Teoria",
             drawerIcon: ({ color }) => (
               <MaterialIcons name="book" size={24} color={color} />
+            ),
+          }}
+        />
+        <Drawer.Screen
+          name="(2-pokedex)"
+          options={{
+            drawerLabel: "Pokedex",
+            title: "Pokedex",
+            drawerIcon: ({ color }) => (
+              <MaterialIcons name="ballot" size={24} color={color} />
             ),
           }}
         />

@@ -37,7 +37,7 @@ export default function Index() {
   return (
     <Container style={{ paddingTop: Platform.OS === "ios" ? 0 : 50 }}>
       <GradientBackground />
-      <StatusBar style="dark" />
+      <StatusBar style="light" />
       <Title>Seleccione una categoria</Title>
       <CategoriasSections>
         {dataCategorias.map((categoria) => (

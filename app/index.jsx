@@ -9,6 +9,7 @@ export default function Index() {
     { name: "conversor", href: "/(1-conversor)" },
     { name: "teoria", href: "/(teoria)" },
     { name: "tabs", href: "/(tabs)" },
+    { name: "pokedex", href: "/(2-pokedex)" },
   ];
 
   const renderItem = ({ item }) => {
@@ -27,7 +28,7 @@ export default function Index() {
 
   return (
     <Container style={{ paddingTop: Platform.OS === "ios" ? 0 : 50 }}>
-      <StatusBar style="dark" />
+      <StatusBar style="light" />
       <Title>MENU</Title>
       <List
         keyExtractor={(item) => item.name}

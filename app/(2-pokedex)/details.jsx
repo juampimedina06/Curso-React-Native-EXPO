@@ -1,11 +1,9 @@
-import { StatusBar } from "expo-status-bar";
 import styled from "styled-components/native";
 
-export default function Index() {
+export default function Details() {
   return (
     <Container>
-      <StatusBar style="light" />
-      <Texto>componente index</Texto>
+      <Texto>componente detalle</Texto>
     </Container>
   );
 }
